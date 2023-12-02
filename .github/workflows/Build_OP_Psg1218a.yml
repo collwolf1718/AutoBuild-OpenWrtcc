@@ -5,7 +5,7 @@
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_psg1218a
+name: Build_Psg1218a
 
 # Add a button to trigger the workflow
 on: 
@@ -69,7 +69,7 @@ jobs:
     #  run: |
     #    git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon-jerrykuku
     
-    - name: Configuration Customization - Build_Newifi_Y1S
+    - name: Configuration Customization - Build_Psg1218a
       env:
         CONFIG_FILE: '#=================================================
 # Description: Build OpenWrt using GitHub Actions
@@ -78,7 +78,7 @@ jobs:
 # Youtube Channel: https://goo.gl/fvkdwm 
 #=================================================
 
-name: Build_Newifi_Y1S
+name: Build_Psg1218a
 
 # Add a button to trigger the workflow
 on: 
@@ -142,9 +142,9 @@ jobs:
     #  run: |
     #    git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon-jerrykuku
     
-    - name: Configuration Customization - Build_Newifi_Y1S
+    - name: Configuration Customization - Build_Psg1218a
       env:
-        CONFIG_FILE: 'psg1218a.config'
+        CONFIG_FILE: 'Psg1218a.config'
       run: |
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x ./customize.sh && ./customize.sh
